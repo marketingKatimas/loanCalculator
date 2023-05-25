@@ -36,7 +36,7 @@ const updateData = (emi) => {
     // let totalInterestPayable = Math.round(totalAmount - loanAmount);
     // totalInterestValue.innerHTML = totalInterestPayable;
 
-    let totalInterest = (0.015 * loanTenure) + 1;
+    let totalInterest = ((0.015 * loanTenure) + 1).toFixed(2);
     totalInterestValue.innerHTML = totalInterest;
 
     const loanTenureValueElement = document.querySelector(".loan-tenure-value");
@@ -69,11 +69,3 @@ init();
 //Add EventListener to calculate Btn
 calculateBtn.addEventListener("click", init);
 
-
-
-
-
-
-
-
-//YoutubeLink: https://www.youtube-nocookie.com/embed/KyiXRer3GW0?playlist=KyiXRer3GW0&autoplay=1&iv_load_policy=3&loop=1&modestbranding=1&start=
